@@ -1,0 +1,18 @@
+.base{
+    color: white;
+    background-color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px
+}
+.title{
+    text-align: center;
+    margin: 100px;
+    font-size: 50px;
+}
+.content{
+    font-size: 20px;
+    color: black;
+}
+.footer{
+    text-align: center;
+}
