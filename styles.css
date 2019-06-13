@@ -22,8 +22,8 @@ Text: #ffffff
 .content{
     /* font-size: 28px; */
     color: black;
-    width: 1600px;
     margin: 100px;
+    margin-right: 150px;
 }
 .content-header{
     width: fit-content;
