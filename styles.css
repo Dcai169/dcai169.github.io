@@ -1,6 +1,15 @@
+
+/* 
+COLORS:
+Primary: #000000
+Secondary: #cccccc
+Highlight: #16bf4f
+Text: #ffffff
+*/
+
 .base{
-    color: white;
-    background-color: gray;
+    color: #cccccc;
+    background-color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 20px
 }
@@ -8,11 +17,28 @@
     text-align: center;
     margin: 100px;
     font-size: 50px;
+    color: #16bf4f;
 }
 .content{
-    font-size: 20px;
+    /* font-size: 28px; */
     color: black;
+    width: 1600px;
+    margin: 100px;
+}
+.content-header{
+    width: fit-content;
+    font-size: 28px;
+}
+.content-section{
+    font-size: 20px;
 }
 .footer{
     text-align: center;
+}
+h5{
+    font-size: 25px
+}
+
+.content-section-spacer{
+    height: 48px;
 }
