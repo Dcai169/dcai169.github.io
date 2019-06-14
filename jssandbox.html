@@ -4,6 +4,25 @@
         <title>JS Sandbox</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
+        <script>
+            var obj = {
+                "field": "A value"
+            };
+            function printArray(array){
+                for (i in array) {
+                    document.write(i+": "+array[i]+"<br>");
+                }
+            }
+
+            function getDT(){
+                var dt = new Date();
+                return (dt.getMonth()+1)+"/"+(dt.getDay()+9)+"/"+(dt.getFullYear())+" "+(dt.getHours())+":"+(dt.getMinutes())+":"+(dt.getSeconds())+"."+(dt.getMilliseconds())+"\r"
+            }
+
+            function setTitle(newTitle) {
+                document.title = newTitle;
+            }
+        </script>
     </head>
 
     <body class="base">
@@ -11,7 +30,37 @@
             <h1>JS Sandbox</h1>
         </div>
         <div class="content">
+            <form action="" method="get">
+                <div class="form-item">
+                    <label for="string">String Input: </label>
+                    <input id="string" type="text">
+                </div>
+                <br>
+
+                <div class="form-item">
+                    <label for="boolean">Boolean Input: </label>
+                    <input id="boolean" type="checkbox">
+                </div>
+                <br>
+
+                <div class="form-item">
+                    <label for="file">File Input: </label>
+                    <input id="file" type="file">
+                </div>
+                <br>
+
+                <div class="form-item">
+                    <label for="submit">Submit</label>
+                    <input id="submit" type="submit">
+                </div>
+                <br>
+            </form>
+
             <script>
+                var window = document.defaultView;
+                var a = [51, "Hello World", true, null, Math.PI, NaN, '\"', 6.022, `PogChamp`, "The quick brown fox jumps over the lazy dog"[38], undefined];
+                // printArray(a);
+                
                 
             </script>
         </div>
