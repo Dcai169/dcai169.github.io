@@ -18,6 +18,11 @@
                     console.log(event.code);
                 }
             });
+
+            var dgram = require('degram');
+            var server = dgram.createSocket("udp4");
+            server.bind(5005);
+            
         </script>
     </head>
 
