@@ -5,24 +5,16 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
         <script>
-            var obj = {
-                "field": "A value"
-            };
-            function printArray(array){
-                for (i in array) {
-                    document.write(i+": "+array[i]+"<br>");
+                function getDT(){
+                    var dt = new Date();
+                    return (dt.getMonth()+1)+"/"+(dt.getDay()+9)+"/"+(dt.getFullYear())+" "+(dt.getHours())+":"+(dt.getMinutes())+":"+(dt.getSeconds())+"."+(dt.getMilliseconds())+"\r"
                 }
-            }
-
-            function getDT(){
-                var dt = new Date();
-                return (dt.getMonth()+1)+"/"+(dt.getDay()+9)+"/"+(dt.getFullYear())+" "+(dt.getHours())+":"+(dt.getMinutes())+":"+(dt.getSeconds())+"."+(dt.getMilliseconds())+"\r"
-            }
-
-            function setTitle(newTitle) {
-                document.title = newTitle;
-            }
-        </script>
+    
+                function updateTime(){
+                    document.getElementById("time").innerHTML = getDT();
+                }
+                setInterval(updateTime, 10)
+            </script>
     </head>
 
     <body class="base">
@@ -30,6 +22,10 @@
             <h1>JS Sandbox</h1>
         </div>
         <div class="content">
+            <div>
+                <p id="time"></p>
+            </div>
+            <br>
             <form action="" method="get">
                 <div class="form-item">
                     <label for="string">String Input: </label>
@@ -55,14 +51,6 @@
                 </div>
                 <br>
             </form>
-
-            <script>
-                var window = document.defaultView;
-                var a = [51, "Hello World", true, null, Math.PI, NaN, '\"', 6.022, `PogChamp`, "The quick brown fox jumps over the lazy dog"[38], undefined];
-                // printArray(a);
-                
-                
-            </script>
         </div>
         <div class="footer">
             <h6><a href="about.html">About Me</a> Hosted with GitHub Pages.</h6>
